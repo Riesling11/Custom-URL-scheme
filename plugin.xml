@@ -59,8 +59,7 @@
 
     <source-file src="src/android/nl/xservices/plugins/LaunchMyApp.java" target-dir="src/nl/xservices/plugins"/>
 
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="MainActivity" android:label="@string/app_name"  android:launchMode="singleInstance">
+    <config-file target="AndroidManifest.xml" parent="/*/application/activity">
       <intent-filter>
         <data android:scheme="$URL_SCHEME"/>
         <action android:name="android.intent.action.VIEW" />
@@ -68,14 +67,74 @@
         <category android:name="android.intent.category.BROWSABLE" />
       </intent-filter>
       <intent-filter>
-		<data android:scheme="http" />
-		<data android:scheme="https" />
-		<data android:host="*locanto.de" />
-        <action android:name="android.intent.action.VIEW" />
+      	<action android:name="android.intent.action.VIEW" />
+        
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
+	
+	<data android:scheme="http" />
+	<data android:scheme="https" />
+	
+	<data android:host="*.locanto.com" />
+	<data android:host="*.locanto.co.uk" />
+	<data android:host="*.locanto.in" />
+	<data android:host="*.locanto.co.nz" />
+	<data android:host="*.locanto.cn" />
+	<data android:host="*.locanto.ca" />
+	<data android:host="*.locanto.com.au" />
+	<data android:host="*.locanto.sg" />
+	<data android:host="*.locanto.jp" />
+	<data android:host="*.locanto.ph" />
+	<data android:host="*.locanto.hk" />
+	<data android:host="*.locanto.com.pk" />
+	<data android:host="*.locanto.co.za" />
+	<data android:host="*.locanto.es" />
+	<data android:host="*.locanto.com.mx" />
+	<data android:host="*.locanto.com.ar" />
+	<data android:host="*.locanto.cl" />
+	<data android:host="*.locanto.com.pe" />
+	<data android:host="*.locanto.com.ve" />
+	<data android:host="*.locanto.de" />
+	<data android:host="*.locanto.at" />
+	<data android:host="*.locanto.ch" />
+	<data android:host="*.locanto.nl" />
+	<data android:host="*.locanto.be" />
+	<data android:host="*.locanto.us" />
+	<data android:host="*.locanto.com.pr" />
+	<data android:host="*.locanto.com.co" />
+	<data android:host="*.locanto.fr" />
+	<data android:host="*.locanto.ae" />
+	<data android:host="*.locanto.com.jm" />
+	<data android:host="*.locanto.asia" />
+	<data android:host="*.locanto.com.bo" />
+	<data android:host="*.locanto.com.do" />
+	<data android:host="*.locanto.com.ec" />
+	<data android:host="*.locanto.com.sv" />
+	<data android:host="*.locanto.com.pa" />
+	<data android:host="*.locanto.com.py" />
+	<data android:host="*.locanto.com.uy" />
+	<data android:host="*.locanto.ie" />
+	<data android:host="*.locanto.lu" />
+	<data android:host="*.locanto.ma" />
+	<data android:host="*.locanto.cm" />
+	<data android:host="*.locanto.cd" />
+	<data android:host="*.locanto.ci" />
+	<data android:host="*.locanto.co.ke" />
+	<data android:host="*.locanto.com.ng" />
+	<data android:host="*.locanto.co.tz" />
+	<data android:host="*.locanto.co.ug" />
+	<data android:host="*.locanto.it" />
+	<data android:host="*.locanto.com.gh" />
+	<data android:host="*.locanto.mu" />
+	<data android:host="*.locanto.com.bd" />
+	<data android:host="*.locanto.qa" />
+	<data android:host="*.locanto.co.id" />
+	<data android:host="*.locanto.co.kr" />
+	<data android:host="*.locanto.com.vn" />
+	<data android:host="*.locanto.africa.com" />
+	<data android:host="*.locanto.co.cr" />
+	<data android:host="*.locanto.com.gt" />
       </intent-filter>
-       </activity>
     </config-file>
   </platform>
   
