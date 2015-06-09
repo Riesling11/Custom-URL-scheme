@@ -60,7 +60,7 @@
     <source-file src="src/android/nl/xservices/plugins/LaunchMyApp.java" target-dir="src/nl/xservices/plugins"/>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="de.locanto.app" android:label="@string/app_name" android:launchMode="singleInstance">
+      <activity android:launchMode="singleInstance">
       <intent-filter>
         <data android:scheme="$URL_SCHEME"/>
         <action android:name="android.intent.action.VIEW" />
